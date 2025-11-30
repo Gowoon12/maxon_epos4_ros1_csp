@@ -10,12 +10,12 @@
 
 + This README provides only a summary of the key information.
 
-+ For detailed explanations and setup instructions, please refer to the attached PPT 9251130_gowoon_csp.pptx).
++ For detailed explanations and setup instructions, please refer to the shared [PPT](https://drive.google.com/file/d/1SvXIRfTnIf9pXATsIN48US0iBAz6lbBT/view?usp=sharing)
 
 
 ## Hardware setup 
 
-+ For information on the CAN–USB cable, CAN wiring, and DIP switch configuration, please refer to the attached PPT.
++ For information on the CAN–USB cable, CAN wiring, and DIP switch configuration, please refer to the [PPT](https://drive.google.com/file/d/1SvXIRfTnIf9pXATsIN48US0iBAz6lbBT/view?usp=sharing).
 
 + You must configure CANopen settings in EPOS Studio. Additionally, set the Interpolation Time Period and CAN bit rate in the Object Dictionary. After completing the configuration, export the DCF file and copy it into the config directory.
 
