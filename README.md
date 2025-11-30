@@ -1,6 +1,6 @@
 # maxon_epos4_ros1_csp
 
-+ This project was developed at the Medical Robotics and Intelligent Control Laboratory, Department of Mechanical Engineering, Chonnam National University, as part of preliminary testing for real-time multi-axis robot control.
++ This project was developed at the Medical Robotics and Intelligent Control Laboratory(MeRIC-LAB), Department of Mechanical Engineering, Chonnam National University, as part of preliminary testing for real-time multi-axis robot control.
 
 + This project provides a guide for controlling Maxon motors using the EPOS4 controller in Cyclic Synchronous Position (CSP) mode on a ROS-based system.
 
@@ -11,6 +11,10 @@
 + This README provides only a summary of the key information.
 
 + For detailed explanations and setup instructions, please refer to the shared [PPT](https://drive.google.com/file/d/1SvXIRfTnIf9pXATsIN48US0iBAz6lbBT/view?usp=sharing)
+
++ All code and reference materials have been uploaded to the NAS for MeRIC-LAB students.
+
+      /ShareFolder/04_Lab_Equipment_Related/maxon_epos4_ros1_csp
 
 
 ## Hardware setup 
