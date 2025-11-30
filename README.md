@@ -10,7 +10,7 @@
 
 + This README provides only a summary of the key information.
 
-+ For detailed explanations and setup instructions, please refer to the shared [PPT](https://drive.google.com/file/d/1SvXIRfTnIf9pXATsIN48US0iBAz6lbBT/view?usp=sharing)
++ For detailed explanations and setup instructions, please refer to the shared [PPT](https://drive.google.com/file/d/1_tLrv9kCGOlQXjzAVMDMiAevYJkADazg/view?usp=sharing)
 
 + All code and reference materials have been uploaded to the NAS for MeRIC-LAB students.
 
