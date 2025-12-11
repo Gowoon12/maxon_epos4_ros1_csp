@@ -143,3 +143,27 @@
    ├── python_csp_keyboard_control.py
    ├── python_example_csp_motor2_only.py
    └── python_csp_realtime_test.py
+
+
+## Update (2025.12.11.)
+
+#### DCF file is updated (/config)
+
++ Maxon RE8 + 16:1 gear ratio + 100 count encoder : CAN_M1.dcf, CAN_M2.dcf, CAN_M3.dcf, CAN_M4.dcf
+
++ Maxon EC32 Flat + 100:1 gear ratio + 1000 count encoder : CAN_M5.dcf
+
++ Faulhaber Flat + 100:1 gear ratio + 1024 count encoder : CAN_M6.dcf
+
+
+#### 6DOF control is now available. 
+
++/config/controller_6dof_csp.yaml
+ 
++ /config/node_layer_6dof_csp.yaml
+
++ /launch/maxon_epos4_canopen_motor_6dof_csp.launch
+
++ /urdf/maxon_epos4_6dof_csp.xacro
+
+++ /scripts/python_csp_keyboard_control_6DOF.py 
