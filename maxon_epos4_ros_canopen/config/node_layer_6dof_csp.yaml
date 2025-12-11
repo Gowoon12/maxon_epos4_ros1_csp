@@ -1,0 +1,73 @@
+nodes:
+  node1:
+    id: 1
+    name: joint1
+    eds_pkg: maxon_epos4_ros_canopen
+    eds_file: "config/CAN_M1.dcf"
+    pos_to_device: "rint(rad2deg(pos)*4*100*16/360)"
+    pos_from_device: "deg2rad(obj6064*360/4*100/16)" 
+    
+
+  node2:
+    id: 2
+    name: joint2
+    eds_pkg: maxon_epos4_ros_canopen
+    eds_file: "config/CAN_M2.dcf"
+    pos_to_device: "rint(rad2deg(pos)*4*100*16/360)"
+    pos_from_device: "deg2rad(obj6064*360/4*100/16)" 
+
+  node3:
+    id: 3
+    name: joint3
+    eds_pkg: maxon_epos4_ros_canopen
+    eds_file: "config/CAN_M3.dcf"
+    pos_to_device: "rint(rad2deg(pos)*4*100*16/360)"
+    pos_from_device: "deg2rad(obj6064*360/4*100/16)" 
+
+  node4:
+    id: 4
+    name: joint4
+    eds_pkg: maxon_epos4_ros_canopen
+    eds_file: "config/CAN_M4.dcf"
+    pos_to_device: "rint(rad2deg(pos)*4*100*16/360)"
+    pos_from_device: "deg2rad(obj6064*360/4*100/16)" 
+
+  node5:
+    id: 5
+    name: joint5
+    eds_pkg: maxon_epos4_ros_canopen
+    eds_file: "config/CAN_M5.dcf"
+    pos_to_device: "rint(rad2deg(pos)*4*1000*100/360)"
+    pos_from_device: "deg2rad(obj6064*360/4*1000/100)" 
+
+  node6:
+    id: 6
+    name: joint6
+    eds_pkg: maxon_epos4_ros_canopen
+    eds_file: "config/CAN_M6.dcf"
+    pos_to_device: "rint(rad2deg(pos)*4*1024*100/360)"
+    pos_from_device: "deg2rad(obj6064*360/4*1024/100)" 
+
+defaults: # optional, all defaults can be overwritten per node
+#  eds_pkg: my_config_package # optional package  name for relative path
+#  eds_file: "my_config.dcf" # path to EDS/DCF file
+  dcf_overlay: # "ObjectID": "ParameterValue" (both as strings)
+    "60C2sub1": "10" # Interpolation time period value, to be set as the sync/interval_ms value present in canopen_bus_layer.yaml file, 10ms is recommended 
+#    "607Dsub1": "-2147483648"     # disable software min limit
+#    "607Dsub2": "2147483647"     # disable software max limit
+
+#    "6084": "10000" # Profile deceleration    
+#    "6085": "10000" # Quick-stop deceleration
+#    "6098": "0" # No homing operation required
+#    "1016sub1" : "0x7F0064" # heartbeat timeout of 100 ms for master at 127
+#    "1017": "100" # heartbeat producer
+
+# canopen_chain_node settings ..
+  motor_allocator: canopen::Motor402::Allocator # select allocator for motor layer
+#   motor_layer: settings passed to motor layer (plugin-specific)
+  switching_state: 2 # (Operation_Enable), state for mode switching. Drive mode of operation from canopen_402 wiki
+  vel_to_device: "vel" # rad/s -> mdeg/s
+  vel_from_device: "obj606C" # actual velocity [mdeg/s] -> rad/s
+  eff_to_device: "rint(eff)" # just round to integer
+  eff_from_device: "0" # unset
+ 
