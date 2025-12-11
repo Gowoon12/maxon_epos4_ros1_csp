@@ -134,16 +134,22 @@
 + Relevant configuration files are located in:
 
   maxon_epos4_ros_canopen/config
+  
    ├── controller_2dof_csp.yaml
+  
    └── node_layer_2dof_csp.yaml
 
-  maxon_epos4_ros_canopen/scripts 
+  maxon_epos4_ros_canopen/scripts
+  
    ├── python_example_1dof_ppm.py (provided by the original referenced repository)
+  
    ├── python_example_2dof_csp.py
+  
    ├── python_csp_keyboard_control.py
+  
    ├── python_example_csp_motor2_only.py
+  
    └── python_csp_realtime_test.py
-
 
 ## Update (2025.12.11.)
 
